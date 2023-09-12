@@ -64,3 +64,20 @@ document.getElementById('multiAnswer').innerHTML = "<ul><li>Perimeter: "+
 recTotal(rHeight, rWidth)[0] + "</li></ul>"+ "Area:" +
 recTotal(rHeight, rWidth)[1] + "</li></ul>";
 
+function myFunction(){
+    alert("Who goes there?")
+    //window.alert
+}
+
+function wizard(name,job){
+    document.getElementById('future').innerHTML =  "welcome" + name + "the" + job +"!";
+}
+
+
+function addItem(){
+let item = prompt("Add Items:");
+console.log(item);
+alert("You added " + item + "to your list.");
+}
+
+
