@@ -20,8 +20,7 @@ stringText.addEventListener('blur', validateString);
 function validateZip() {
     let vz1 = /^[0-9]{5}$/; // must have a number between 1 and 5 occur 5 times
     let vz2 = /^\d{5}$/; //same as the above , d = any digit(number)
-    //let vz3 = /^([0-9]{5})([0-9]{4}?)$/; // must begin with 5 digits or end with 4 digits so a 5 digit number or a nine digit number will work
-    let vz3 = /^\d{5}$|^\d{9}$|^\d{5}[- ]?\d{4}$/;
+    let vz3 = /^([0-9]{5})([0-9]{4}?)$/; // must begin with 5 digits or end with 4 digits so a 5 digit number or a nine digit number will work
 
     document.getElementById('zipAns').innerText = vz3.test(zipText.value)
 }
