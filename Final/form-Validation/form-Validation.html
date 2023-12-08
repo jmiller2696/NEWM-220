@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head>
+<body>
+    <h1>Register for an Account</h1>
+        <div>Account Information</div>
+            <label>E-mail Adress:</label>
+            <input type="text" id="email" placeholder="example@gmail.com"/><br/>
+            <li id="emailAns"></li>
+            <label>Password:</label>
+            <input type="password" id="password"/>
+            <li>Password must be between 8 and 10 characters</li>
+            <li id="passwordAns"></li>
+            <label>Verify Password:</label>
+            <input type="password" id="verifyPassword"/>
+            <li id="vPasswordAns"></li><br/>
+        <div>Contact Information</div><br/>
+            <label>First Name:</label>
+            <input type="text" id="fName"/><br/>
+            <label>Last Name:</label>
+            <input type="text" id="lName"/><br/>
+            <label>Address:</label>
+            <input type="text" id="address"/><br/>
+            <label>City:</label>
+            <input type="text" id="city"/><br/>
+            <label>State:</label>
+            <input type="text" id="state" placeholder="IN"/>
+            <li id ="stateAns"></li>
+            <label>Zip Code:</label>
+            <input type="text" id="zCode" placeholder="xxxxx"/>
+            <li id ="zipAns"></li><br/>
+            <label>Phone Number:</label>
+            <input type="text" id="pNum" placeholder="xxx-xxx-xxxx"/>
+            <li id ="phoneAns"></li><br/><br/>
+        <div>Payment Information</div><br/>
+            <label>Card Number:</label>
+            <input type="text" id="cNum" placeholder="xxxx-xxxx-xxxx-xxxx"/>
+            <li id='ccardAns'></li><br/>
+            <label>Expiration Date:</label>
+            <input type="text" id="expDate" placeholder="XX/XX/XXXX"/>
+            <li id= expAns></li><br/><br/>
+        <div>Submit Registration</div><br/><br/>
+            <p id="regCheck"></p>
+            <input type="submit" id="submit" value="Register"/>
+            <input type="submit" id="reset" value="Reset"/>
+            
+
+
+    <script src="form-Validation.js"></script>
+</body>
+</html>
